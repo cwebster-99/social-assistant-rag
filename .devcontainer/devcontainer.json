@@ -1,9 +1,9 @@
 {
-	"name": "Data Science Jupyter Notebooks (Python)",
-    "build": {
+	"name": "GitHub Models Exploration with Notebooks",
+	"build": {
 		"context": "..",
-        "dockerfile": "Dockerfile"
-    },
+		"dockerfile": "Dockerfile"
+	},
 
 	"postCreateCommand": "conda init --all",
 	"postAttachCommand": "conda activate myenv",
@@ -24,7 +24,6 @@
                 "editor.wordWrap": "on",
 				"[python]": {
 					"defaultInterpreterPath": "/opt/conda/envs/myenv/bin/python",
-					"editor.defaultFormatter": "ms-python.black-formatter",
 					"editor.formatOnType": true,
 					"editor.formatOnSave": true
 				},
