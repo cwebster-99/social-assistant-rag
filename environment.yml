@@ -1,0 +1,16 @@
+name: myenv
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - ipykernel # required for jupyter notebook in VS Code
+  - pip
+  - pip:
+    - requests
+    - beautifulsoup4
+    - json
+    - matplotlib
+    - numpy
+    - openai
+    - pandas
+    - rank-bm25

@@ -1,0 +1,72 @@
+{
+	"name": "Data Science Jupyter Notebooks (Python)",
+    "build": {
+		"context": "..",
+        "dockerfile": "Dockerfile"
+    },
+
+	"postCreateCommand": "conda init --all",
+	"postAttachCommand": "conda activate myenv",
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+                "workbench.colorTheme": "Default Dark+",
+                "editor.wordWrap": "on",
+				"[python]": {
+					"defaultInterpreterPath": "/opt/conda/envs/myenv/bin/python",
+					"editor.defaultFormatter": "ms-python.black-formatter",
+					"editor.formatOnType": true,
+					"editor.formatOnSave": true
+				},
+				"[jupyter]": {
+					"themeMatplotlibPlots": true,
+                    "askForKernelRestart": false,
+					"widgetScriptSources": [
+						"unpkg.com",
+						"jsdelivr.com"
+					]
+				},
+                "[notebook]": {
+                    "gotoSymbols.showAllSymbols": true,
+                    "consolidatedRunButton": false,
+                    "experimental.variablesView": true,
+                    "lineNumbers": "on",
+                    "outline.showCodeCellSymbols": false,
+                    "output.minimalErrorRendering": true,
+                    "output.scrolling": true,
+                    "output.wordWrap": true,
+                    "stickyScroll.enabled": true
+                },
+                "github.copilot.enable": {
+                    "plaintext": true,
+                    "markdown": true,
+                    "scminput": true
+                },
+                "dataWrangler.startInEditModeForNotebookEntrypoints": true
+			},
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"ms-toolsai.jupyter",
+				"ms-python.python",
+                "ms-python.vscode-pylance",
+				"ms-python.pylint",
+                "ms-toolsai.datawrangler",
+                "github.copilot-chat",
+                "ms-vscode.vscode-speech"
+			]
+		}
+	},
+
+	// Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	// "remoteUser": "root"
+}
