@@ -5,15 +5,6 @@
 		"dockerfile": "Dockerfile"
 	},
 
-	"postCreateCommand": "conda init --all",
-	"postAttachCommand": "conda activate myenv",
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-	
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
@@ -64,7 +55,7 @@
                 "ms-vscode.vscode-speech"
 			]
 		}
-	},
+	}
 
 	// Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	// "remoteUser": "root"
