@@ -1,0 +1,9 @@
+url='https://blog.fabric.microsoft.com/en-US/blog/announcing-the-microsoft-fabric-ai-learning-hackathon/'
+
+url='https://microsoftfabric.devpost.com/'
+
+url='https://techcommunity.microsoft.com/t5/educator-developer-blog/get-started-with-github-copilot-with-vscode-and-python-extension/ba-p/3736564'
+
+url='https://github.com/microsoft/RAG_Hack'
+
+url='https://code.visualstudio.com/blogs/2023/11/13/vscode-copilot-smarter'
