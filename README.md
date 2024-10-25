@@ -1,1 +1,3 @@
-# social-assistant-rag
+# Advocacy AI Assistant - **RAG Exploration**
+
+This repository uses Jupyter notebooks to explore Retrieval-Augmented Generation (RAG) for the Advocacy AI Assistant, a tool that generates social content from blog posts or YouTube videos. By integrating RAG, this assistant leverages a curated knowledge base of VS Code features, enabling more accurate and context-rich responses. Dive into examples and workflows demonstrating how RAG enhances content creation with VS Code insights, supporting better advocacy and engagement in social media content.
