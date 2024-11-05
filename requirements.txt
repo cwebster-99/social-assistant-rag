@@ -1,0 +1,9 @@
+requests
+beautifulsoup4
+json
+os
+openai
+pandas
+rank-bm25
+python-dotenv
+langchain
