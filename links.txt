@@ -8,26 +8,4 @@ url='https://github.com/microsoft/RAG_Hack'
 
 url='https://code.visualstudio.com/blogs/2023/11/13/vscode-copilot-smarter'
 
-url='https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/'
 
-
-from langchain.text_splitter import MarkdownHeaderTextSplitter
-
-# Initialize the MarkdownHeaderTextSplitter with the headers to split on
-markdown_splitter = MarkdownHeaderTextSplitter(headers_to_split_on)
-
-# Split each document content and retain the URL
-split_docs = []
-for doc in docs_contents:
-    split_content = markdown_splitter.split_text(doc['content'])
-    for split in split_content:
-        split_docs.append({
-            'content': split.page_content,
-            'url': doc['url'],
-            'metadata': split.metadata
-        })
-
-# Print the first few split documents to verify
-for split_doc in split_docs[:5]:
-    print(split_doc)
-    print('---')
